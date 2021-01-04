@@ -7,7 +7,7 @@ class QuestionService {
 
   async getQuestion() {
     let res = await trivapi.get()
-    debugger
+    // debugger
     ProxyState.question = res.data.results.map(q => new Question(q))
   }
 
