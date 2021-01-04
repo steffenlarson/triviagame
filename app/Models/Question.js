@@ -12,7 +12,13 @@ export default class Question {
 
   get Template() {
     return `
-    
+    <div>
+                <h2> ${this.question} </h2>
+                <p>${this.correctAnswer}</p>
+                <p>${this.incorrectAnswer}</p>
+                <p>${this.incorrectAnswer}</p>
+                <p>${this.incorrectAnswer}</p>
+            </div>
     `
   }
 }
